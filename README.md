@@ -3,7 +3,7 @@
 
 # ImagePicker
 
-> 项目地址：https://github.com/linchaolong/ImagePicker
+> 原项目地址：https://github.com/linchaolong/ImagePicker
 
 ImagePicker 是 Android 下的图片选择与裁剪开源库，基于 [Android-Image-Cropper](https://github.com/ArthurHub/Android-Image-Cropper) 并做了如下改进：
 
@@ -41,9 +41,11 @@ public void startChooser(Fragment fragment, @NonNull Callback callback)
 
 `${latest.version}` 是 [![Download](https://api.bintray.com/packages/linchaolong/maven/imagepicker/images/download.svg)](https://bintray.com/linchaolong/maven/imagepicker/_latestVersion)
 
+
 添加依赖到你的 build.gradle
 ```
 compile 'com.linchaolong.android:imagepicker:${latest.version}'
+(兼容Android P版本请到release下载aar包)
 ```
 
 1. 在 Androidmanifest.xml 中配置 `CropImageActivity`（裁剪图片需要）
